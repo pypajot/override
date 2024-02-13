@@ -1,19 +1,23 @@
-bool main(void)
+//
+// Created by loumouli on 2/12/24.
+//
 
-{
-  int local_14 [4];
-  
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int ac, char **av) {
+  int buff;
+
   puts("***********************************");
   puts("* \t     -Level00 -\t\t  *");
   puts("***********************************");
-  printf("Password:");
-  __isoc99_scanf(&DAT_08048636,local_14);
-  if (local_14[0] != 0x149c) {
+  puts("Password:");
+  scanf("%d", &buff);
+  if (buff != 0x149c)
     puts("\nInvalid Password!");
-  }
   else {
     puts("\nAuthenticated!");
     system("/bin/sh");
   }
-  return local_14[0] != 0x149c;
+  return buff != 0x149c;
 }
