@@ -1,0 +1,5 @@
+{
+	"files.associations": {
+		"prctl.h": "c"
+	}
+}

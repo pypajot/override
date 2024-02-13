@@ -1,12 +1,15 @@
 import struct
 
-address_jmp = 0x0400a85  # Address that will execute `system("/bin/sh")`
+addr1 = 0x756e505234376848
+addr2 = 0x45414a3561733951
+addr3 = 0x377a7143574e6758
+addr4 = 0x354a35686e475873
+addr5 = 0x48336750664b394d
 
-payload = ""
-# payload += struct.pack('<I', address_jump)
+str = struct.pack('<Q', addr1)
+str += struct.pack('<Q', addr2)
+str += struct.pack('<Q', addr3)
+str += struct.pack('<Q', addr4)
+str += struct.pack('<Q', addr5)
 
-payload += '\x0a'
-payload += '1234\0xa'
-
-with open('payload', 'wb') as f:
-    f.write(payload)
+print(str)
