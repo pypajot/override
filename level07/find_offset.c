@@ -13,5 +13,7 @@ int main() {
 		bin_sh_offset += 0x40000000;
 	}
 	printf("offset ret = %#x %u\n", offset_ret, offset_ret);
-	printf("bin_sh = %#x %u\n", bin_sh_offset, bin_sh_offset);
+	printf("system offset = %u\n", 0xf7e2c000 + 0x3eed0);
+	printf("bin_sh argument = %#x %u\n", bin_sh_offset, bin_sh_offset);
+	printf("bin_sh string offset = %u\n", 0xf7e2c000 + 0x15d7ec)
 }
