@@ -2,7 +2,8 @@
 ## Source Code
 ![level08.png](level08.png)
 ## Walkthrough
-- We will use the difference between `fopen` and `open` to change the permissions of the level09 pass file.
+- The binary create a backup file where it write the content of the argv[1]
+- We need to do that in a path where with have right.
 ## Answer
     cd /tmp
     mkdir backups
