@@ -2,8 +2,8 @@
 ## Source Code
 ![level08.png](level08.png)
 ## Walkthrough
-- The binary create a backup file where it write the content of the argv[1]
-- We need to do that in a path where with have right.
+- The binary creates a backup file where it will write the content of argv[1]
+- We need to do that in a path where with have the rights.
 ## Answer
     cd /tmp
     mkdir backups
